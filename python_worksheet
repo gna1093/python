@@ -1,0 +1,54 @@
+sudo apt-get install python-pip
+sudo pip install virtualenv
+virtualenv test-env
+cd test-env/
+. bin/activate
+
+pip install ipython
+
+	error throws - compilation terminated.
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+	to 
+	
+
+    Python.h is nothing but a header file. It is used by gcc to build applications. You need to install a package called python-dev. This package includes header files, a static library and development tools for building Python modules, extending the Python interpreter or embedding Python in applications.
+
+enter:
+
+$ sudo apt-get install python-dev - success
+>pip install ipython
+
+enter into ipython
+>ipython
+
+Ipython debug : %debug -> gives you last exception thrown
+
+tensor installation
+---------------------------------------
+pip install --upgrade pip
+pip install --upgrade tensorflow
+---------------------------------------
+
+pip install https://storage.googleapis.com/tensorflow/mac/tensorflow-0.5.0-py2-none-any.whl
+
+tensorflow-0.5.0-py2-none-any.whl is not a supported wheel on this platform.
+
+
+I too got the same problem
+I downloaded get-pip.py from https://bootstrap.pypa.io/get-pip.py
+
+and then ran python2.7 get-pip.py for installing pip2.7
+
+and then ran the pip install command with python2.7 as follows
+
+For Ubuntu/Linux:
+
+python2.7 -m pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.5.0-cp27-none-linux_x86_64.whl
+
+------------------------------------------------------------------
+KeyError: "Couldn't find field google.protobuf.FileOptions.javanano_use_deprecated_package"
+
+pip install --force-reinstall --upgrade protobuf
+
+-------------------------------------------------------------------
+
